@@ -1,0 +1,46 @@
+{% block content %}
+<script type="text/javascript" src="/books/media/js/jquery-1.4.2.min.js" />
+{% load static %}
+<link rel="stylesheet" href="{% static 'morse_logs/css/style.css' %}">
+
+
+<link href="{% static 'morse_logs/js/jquery-ui/jquery-ui.min.css' %}" rel="stylesheet">
+<link href="{% static 'morse_logs/js/jquery-ui/jquery-ui.structure.min.css' %}" rel="stylesheet">
+<link href="{% static 'morse_logs/js/jquery-ui/jquery-ui.theme.min.css' %}" rel="stylesheet">
+
+<div class="container">
+    <title>Tutorial</title>
+    <h1>Tutorial</h1>
+</div>
+
+<div class="col-sm-3">
+    <div class="btn-group-vertical" style="padding-top:12px;">
+        <button type="button" class="btn btn-warning" id="btn1" data-target="pilot">Btn1</button>
+        <button type="button" class="btn btn-warning" id="btn2" data-target="design">Btn2</button>
+        <button type="button" class="btn btn-warning" id="btn3" data-target="instrument">Btn3</button>
+        <button type="button" class="btn btn-warning" id="btn4" data-target="innovations">Btn4</button>
+    </div>
+</div>
+<div id="content" class="col-sm-9">
+    <div id="pilot">
+        <p>Name1</p>
+        <h4>my name is A..........</h4>
+    </div>
+    <div id="design">
+        <p>Name2</p>
+        <h4>my name is A..........</h4>
+    </div>
+    <div id="instrument">
+        <p>Name3</p>
+        <h4>my name is A..........</h4>
+    </div>
+    <div id="innovations">
+        <p>Name4</p>
+        <h4>my name is A..........</h4>
+    </div>
+</div>
+
+<script src="{% static 'morse_logs/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'morse_logs/js/jquery-ui/jquery-ui.js' %}"></script>
+<script src="{% static 'morse_logs/js/app.js' %}"></script>
+{% endblock content %}
