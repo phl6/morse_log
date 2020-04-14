@@ -6,6 +6,7 @@ from users.forms import (
     EditProfileForm
 )
 from django.contrib.auth.decorators import login_required
+from users.models import userScore
 
 
 # Create your views here.
@@ -27,7 +28,6 @@ def register(request):
     # Display a blank or invalid form.
     context = {'form': form}
     return render(request, 'registration/register.html', context)
-
 
 @login_required()
 def view_profile(request):
@@ -51,6 +51,7 @@ def edit_profile(request):
 
 @login_required()
 def change_password(request):
+
     if request.method == 'POST':
         form = PasswordChangeForm(data=request.POST, user=request.user)
 
@@ -62,16 +63,9 @@ def change_password(request):
             return redirect('./change_password')
     else:
         form = PasswordChangeForm(user=request.user)
-
         args = {'form': form}
         return render(request, 'users/change_password.html', args)
-
-# @login_required()
-# def updateScore(request):
-
-
 
 #  render the initial form on a page that user can
 #  enter an email that associates to their account
 #  so that reset pw email can be sent
-

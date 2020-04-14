@@ -1,7 +1,34 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="59673979-a816-4f41-acd7-579479234dcb" name="Default Changelist" comment="" />
+    <list default="true" id="59673979-a816-4f41-acd7-579479234dcb" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db.sqlite3" beforeDir="false" afterPath="$PROJECT_DIR$/db.sqlite3" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/static/morse_logs/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/static/morse_logs/css/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/templates/morse_logs/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/templates/morse_logs/base.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/templates/morse_logs/cipher.html" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/templates/morse_logs/cipher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/templates/morse_logs/decipher.html" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/templates/morse_logs/decipher.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/templates/morse_logs/game1.html" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/templates/morse_logs/game1.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/templates/morse_logs/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/templates/morse_logs/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/templates/morse_logs/tutorialIndex.html" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/templates/morse_logs/tutorialIndex.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/morse_logs/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/morse_logs/views.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/admin.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0001_initial.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0002_userprofile_score.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0003_remove_userprofile_description.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0004_auto_20200408_0730.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0005_auto_20200408_1001.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0006_auto_20200409_0703.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0007_auto_20200409_0714.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0008_auto_20200409_0745.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/migrations/0009_auto_20200409_0755.py" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/models.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/templates/registration/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/users/templates/registration/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/users/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/users/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -15,9 +42,14 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1Snbo9LvnQUIzlxIfqsH3jGPQiU" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/users/templates/users" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
@@ -60,5 +92,16 @@
   </component>
   <component name="UnknownFeatures">
     <option featureType="com.intellij.fileTypeFactory" implementationName="*.js" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>

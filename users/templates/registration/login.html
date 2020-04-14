@@ -4,7 +4,7 @@
 
 <title>Login</title>
 
-<div class="container ">
+<div class="container">
     <h1>Login</h1>
     {% if form.errors %}
         <p> Your username and password didn't match. Please try again.</p>
@@ -13,6 +13,9 @@
     <form method="post" action="{% url 'users:login' %}">
         {% csrf_token %}
         {{ form.as_p }}
+          <div class="checkbox">
+            <label><input type="checkbox"> Remember me</label>
+          </div>
 
         <button name = "submit" > Log in </button>
         {# Redirect to index if log in successfully #}

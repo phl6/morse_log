@@ -14,11 +14,11 @@ urlpatterns = [
     # Home Page
     path(r'', views.index, name='index'),
     # Page that shows all topics
-    path(r'/topics/', views.topics, name='topics'),
-    path(r'/cipher/', views.cipher, name='cipher'),
-    path(r'/decipher/', views.decipher, name='decipher'),
-    path(r'/tutorialIndex/', views.tutorialIndex, name='tutorialIndex'),
-    path(r'/gameDirectory/', views.gameDirectory, name='gameDirectory'),
-    path(r'/game1/', views.game1, name='game1'),
+    path(r'topics/', views.topics, name='topics'),
+    path(r'cipher/', views.cipher, name='cipher'),
+    path(r'decipher/', views.decipher, name='decipher'),
+    path(r'tutorialIndex/', views.tutorialIndex, name='tutorialIndex'),
+    path(r'gameDirectory/', views.gameDirectory, name='gameDirectory'),
+    path(r'game1/', views.game1, name='game1'),
 
 ]

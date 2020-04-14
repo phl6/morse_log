@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.template import loader
 from django.http import HttpResponse
 
-from users.models import UserScore
+from users.models import userScore
 from .models import Topic
 from django.contrib.auth.decorators import login_required
 
@@ -124,30 +124,35 @@ def gameDirectory(request):
     """The Game Directory page"""
     return render(request, 'morse_logs/gameDirectory.html')
 
+
 @login_required()
 def game1(request):
 
     if request.user and not request.user.is_anonymous:
         user = request.user
     #else:
-        #throw exception
+        #Throw some raised exception here as the user is not valid...
 
     """The Game 1 page"""
-    val1 = request.GET.get('ans1', '')
-    res = "Incorrect"
+    def verifyGame1(val1):
+        user_score, created = userScore.objects.get_or_create(user=user)
 
-    user_score = UserScore.objects.get_or_create(user=user)
+        if val1 == 2:
+            #user's score declared in model increase 5points
+            #display correct and 5 points added to user
+            user_score.score += 5
+            user_score.save()
+            return user_score
+        else:
+            #user's score declared in model has no point
+            #display incorrect and 0 point added to user
+            return user_score
 
-    if val1 == 2:
-        #user's score declared in model increase 5 points
-        #display correct and 5 points added to user
-        res = "Correct"
-        user_score.score = int(user_score.score) + 5
-        user_score.save()
-    else:
-        #user's score declared in model has no point
-        #display incorrect and 0 point added to user
-        res = "Incorrect"
+    ans1 = request.GET.get('ans1', '')
+    if ans1 == '':
+        ans1 = 0
 
-    return render(request, 'morse_logs/game1.html', {'result': res})
+    cScore = verifyGame1(int(ans1))
+
+    return render(request, 'morse_logs/game1.html', {'currentS': cScore})
 

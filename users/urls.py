@@ -19,14 +19,14 @@ urlpatterns = [
     path('', include('django.contrib.auth.urls')),
 
     # Registration
-    path(r'/register/', views.register, name='register'),
-    path(r'/profile/', views.view_profile, name='view_profile'),
-    path(r'/profile/edit', views.edit_profile, name='edit_profile'),
-    path(r'/change_password', views.change_password, name='change_password'),
+    path(r'register/', views.register, name='register'),
+    path(r'profile/', views.view_profile, name='view_profile'),
+    path(r'profile/edit', views.edit_profile, name='edit_profile'),
+    path(r'change_password', views.change_password, name='change_password'),
     # django package to do reset password and reverse reset password
-    path(r'/reset_password', PasswordResetView.as_view(), name='reset_password'),
-    path(r'/reset_password/done', PasswordResetDoneView.as_view(), name='password_reset_done'),
-    path(r'/reset_password/confirm', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
-    path(r'/reset_password/complete', PasswordResetCompleteView.as_view(), name='password_reset_complete'),
+    path(r'reset_password', PasswordResetView.as_view(), name='reset_password'),
+    path(r'reset_password/done', PasswordResetDoneView.as_view(), name='password_reset_done'),
+    path(r'reset_password/confirm', PasswordResetConfirmView.as_view(), name='password_reset_confirm'),
+    path(r'reset_password/complete', PasswordResetCompleteView.as_view(), name='password_reset_complete'),
 
 ]
