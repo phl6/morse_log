@@ -1,10 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "morse_logs/base.html" %}
 
-</body>
-</html>
+{% block content %}
+<div class="jumbotron">
+    <h1>GAME 2</h1>
+    <br/><br/>
+    <div class="well" style="text-align: center;">
+    <h2>What the alphabet of Morse Code -..-</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input id="ans2" name="ans2"/><br><br>
+        <input type="submit" name="Submit"/>
+    </form>
+    </div>
+</div>
+{% endblock content %}

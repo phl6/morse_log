@@ -2,13 +2,14 @@
 
 {% block content %}
 <title>Register</title>
-<div class="container">
-    <h1>Register</h1>
+<br/>
+<div class="container jumbotron">
+<p style="font-size: 65px"><strong>Register</strong></p>
     <form method="post" action="{% url 'users:register' %}">
         {% csrf_token %}
         {{ form.as_p }}
-
-        <button name = "submit"> Register </button>
+        <br/>
+        <button type="submit" name="register" class="btn-group-justified" style="font-size:18px"><strong>Register</strong></button>
         <input type = "hidden" name="next" value="{% url 'morse_logs:index' %}" />
     </form>
 </div>

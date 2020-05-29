@@ -1,0 +1,14 @@
+{% extends "morse_logs/base.html" %}
+
+{% block content %}
+<title>Decipher</title>
+<div class="container">
+    <h1>Decipher</h1>
+        <form action="" method="get" >
+            <textarea rows="10" cols="50" name='a1' ></textarea>
+            <textarea rows="10" cols="50" name='a2' > {{result}} </textarea>
+            <button type="submit" name="decipher">Cipher</button>
+        </form>
+</div>
+{% endblock content  %}
+

@@ -2,12 +2,16 @@
 
 {% block content %}
     <title>GAME 1</title>
+<div class="jumbotron">
     <h1>GAME 1</h1>
-    <h2>1 + 1 = ?</h2>
-    <form action="" method="get" >
-        <input type="number" id="ans1" name="ans1"/><br><br>
-        <button type="submit" name="game1Answer">Submit</button><br><br>
-        <textarea rows="10" cols="50" name='a2' > {{currentS.score}} </textarea>
+    <br/><br/>
+    <div class="well" style="text-align: center;">
+    <h2>What is the Morse Code of 'F'</h2>
+    <form method="POST">
+        {% csrf_token %}
+        <input id="ans2" name="ans2"/><br><br>
+        <input type="submit" name="Submit"/>
     </form>
+    </div>
 </div>
 {% endblock content %}

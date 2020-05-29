@@ -1,0 +1,29 @@
+{% extends "morse_logs/base.html" %}
+
+{% block content %}
+<title>Leaderboard</title>
+<div class="container jumbotron" >
+    <p style="font-size: 65px"><strong>Leaderboard</strong></p>
+    <div>
+        <table class="table table-striped table-hover" style="width:90%" border="1">
+            <tr>
+                <th style="background-color: #2d2d30; color: #f3f5f2; height: 80px; font-size: 25px">Ranking</th>
+                <th style="background-color: #2d2d30; color: #f3f5f2; font-size: 25px">Username</th>
+                <th style="background-color: #2d2d30; color: #f3f5f2; font-size: 25px">Score</th>
+            </tr>
+            {% for s in topFiveUserScores%}
+            <tr>
+                <td style="height: 75px; font-size: 25px">{{forloop.counter}}</td>
+                <td style="height: 40px; font-size: 25px">{{s.user}}</td>
+                <td style="height: 40px; font-size: 25px">{{s.score }}</td>
+            </tr>
+            {% endfor%}
+
+        </table>
+
+    </div>
+
+</div>
+{% endblock content  %}
+
+

@@ -31,7 +31,7 @@ urlpatterns = [
 
     path('', include('morse_logs.urls')),
 
-    path('accounts/', include('django.contrib.auth.urls'))
+    path('accounts/', include('django.contrib.auth.urls')),
 ]
 
 if settings.DEBUG:

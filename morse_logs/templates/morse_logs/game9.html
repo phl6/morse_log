@@ -1,0 +1,25 @@
+{% extends "morse_logs/base.html" %}
+
+{% block content %}
+{% load static %}
+
+    <title>GAME 9</title>
+<div>
+<div class="jumbotron">
+    <h1>GAME 9</h1>
+    <br/><br/>
+    <div class="well" style="text-align: center;">
+    <h2>What is the sentence of this Morse Code sound?</h2>
+    <audio controls>
+        <source src="{% static 'morse_logs/audio/iLoveYou.mp3' %}" type="audio/mp3">
+    </audio>
+        <br/> <br/>
+    <form method="POST">
+        {% csrf_token %}
+        <input id="ans2" name="ans2"/><br><br>
+        <input type="submit" name="Submit"/>
+    </form>
+    </div>
+</div>
+</div>
+{% endblock content %}

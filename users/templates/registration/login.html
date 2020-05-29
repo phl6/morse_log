@@ -3,9 +3,9 @@
 {% block content %}
 
 <title>Login</title>
-
-<div class="container">
-    <h1>Login</h1>
+<br/>
+<div class="container jumbotron">
+<p style="font-size: 65px"><strong>Login</strong></p>
     {% if form.errors %}
         <p> Your username and password didn't match. Please try again.</p>
     {% endif %}
@@ -23,7 +23,7 @@
     </form>
 
 
-    <form action='../reset_password' method='GET'>
+    <form action='../password_reset' method='GET'>
         <button type='submit'>Forget Password</button>
     </form>
 </div>

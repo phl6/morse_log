@@ -1,10 +1,11 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-</head>
-<body>
+{% extends "morse_logs/base.html" %}
 
-</body>
-</html>
+{% block content %}
+    <title>Correct!</title>
+<div>
+    <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+    <p style="font-size: 55px"><strong>Congratulations! Your answer is CORRECT!</strong></p>
+    <br/><br/>
+    <a href="{% url 'morse_logs:gameDirectory' %}" style="font-size: 20px"><strong>Back to Game Directory</strong></a>
+</div>
+{% endblock content %}

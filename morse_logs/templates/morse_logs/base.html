@@ -13,9 +13,8 @@
 </head>
 
 <body>
-    <div class="container ">
         <nav class="navbar navbar-inverse navbar-fixed-top"
-            style="background-color: #2d2d30; font-size: 18px !important; font-family: Montserrat, sans-serif;">
+            style="background-color: #2d2d30; font-size: 18px; font-family: Montserrat;">
             <div class="container-fluid ">
                 <div class="navbar-header">
                     <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar"
@@ -33,10 +32,10 @@
                         {% if user.is_authenticated %}
                         <li><a href="{% url 'morse_logs:index' %}">Home</a></li>
                         <li><a href="{% url 'morse_logs:tutorialIndex' %}">Tutorials</a></li>
-                        <li><a href="{% url 'morse_logs:gameDirectory' %}">Game</a></li>
+                        <li><a href="{% url 'morse_logs:gameDirectory' %}">Games</a></li>
                         <li><a href="{% url 'morse_logs:cipher' %}">Cipher</a></li>
                         <li><a href="{% url 'morse_logs:decipher' %}">Decipher</a></li>
-
+                        <li><a href="{% url 'morse_logs:leaderboard' %}">Leaderboard</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="{% url 'users:view_profile' %}"><span class="glyphicon glyphicon-user"></span>
@@ -55,13 +54,13 @@
             </div>
             <!--/.container-fluid -->
         </nav>
-    </div>
+
 
 
     <br /><br /><br />
     <div class="container">
         <div class="row">
-            <div class="col-sm6 col-sm-offset-3">
+            <div class="col-md12">
                 {% block content %}
                 {% endblock content %}
             </div>

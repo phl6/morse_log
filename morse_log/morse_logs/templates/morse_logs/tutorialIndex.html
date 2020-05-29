@@ -1,0 +1,248 @@
+{% extends "morse_logs/base.html" %}
+
+{% block content %}
+{% load static %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<link rel="stylesheet" href="{% static 'morse_logs/css/style.css' %}">
+<link href="{% static 'morse_logs/js/jquery-ui/jquery-ui.min.css' %}" rel="stylesheet">
+<link href="{% static 'morse_logs/js/jquery-ui/jquery-ui.structure.min.css' %}" rel="stylesheet">
+<link href="{% static 'morse_logs/js/jquery-ui/jquery-ui.theme.min.css' %}" rel="stylesheet">
+
+<div class="container">
+    <h1>Tutorial</h1>
+</div>
+
+<div id="menu">
+    <div>
+        <ul class="nav nav-pills nav-justified">
+            <li><a data-toggle="tab" href="#" class="justClicka">A</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickb">B</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickc">C</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickd">D</a></li>
+            <li><a data-toggle="tab" href="#" class="justClicke">E</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickf">F</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickg">G</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickh">H</a></li>
+            <li><a data-toggle="tab" href="#" class="justClicki">I</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickj">J</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickk">K</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickl">L</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickm">M</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickn">N</a></li>
+        </ul>
+    </div>
+    <div>
+        <ul class="nav nav-pills nav-justified">
+            <li><a data-toggle="tab" href="#" class="justClickm">M</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickn">N</a></li>
+            <li><a data-toggle="tab" href="#" class="justClicko">O</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickp">P</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickq">Q</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickr">R</a></li>
+            <li><a data-toggle="tab" href="#" class="justClicks">S</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickt">T</a></li>
+            <li><a data-toggle="tab" href="#" class="justClicku">U</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickv">V</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickw">W</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickx">X</a></li>
+            <li><a data-toggle="tab" href="#" class="justClicky">Y</a></li>
+            <li><a data-toggle="tab" href="#" class="justClickz">Z</a></li>
+        </ul>
+    </div>
+</div>
+
+<div class="content">
+</div>
+
+    <div class="content1"  style="display:none">
+        <h1>A</h1>
+        <img src="{% static 'morse_logs/img/A.jpg' %}" alt="A" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/A.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content2"  style="display:none">
+        <h1>B</h1>
+        <img src="{% static 'morse_logs/img/B.jpg' %}" alt="B" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/B.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content3"  style="display:none">
+        <h1>C</h1>
+        <img src="{% static 'morse_logs/img/C.jpg' %}" alt="C" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/C.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content4"  style="display:none">
+        <h1>D</h1>
+        <img src="{% static 'morse_logs/img/D.jpg' %}" alt="D" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/D.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content5"  style="display:none">
+        <h1>E</h1>
+        <img src="{% static 'morse_logs/img/E.jpg' %}" alt="E" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/E.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content6"  style="display:none">
+        <h1>F</h1>
+        <img src="{% static 'morse_logs/img/F.jpg' %}" alt="F" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/F.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content7"  style="display:none">
+        <h1>G</h1>
+        <img src="{% static 'morse_logs/img/G.jpg' %}" alt="G" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/G.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content8"  style="display:none">
+        <h1>H</h1>
+        <img src="{% static 'morse_logs/img/H.jpg' %}" alt="H" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/H.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content9"  style="display:none">
+        <h1>I</h1>
+        <img src="{% static 'morse_logs/img/I.jpg' %}" alt="I" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/I.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content10"  style="display:none">
+        <h1>J</h1>
+        <img src="{% static 'morse_logs/img/J.jpg' %}" alt="J" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/J.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content11"  style="display:none">
+        <h1>K</h1>
+        <img src="{% static 'morse_logs/img/K.jpg' %}" alt="K" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/K.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content12"  style="display:none">
+        <h1>L</h1>
+        <img src="{% static 'morse_logs/img/L.jpg' %}" alt="L" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/L.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content13"  style="display:none">
+        <h1>M</h1>
+        <img src="{% static 'morse_logs/img/M.jpg' %}" alt="M" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/M.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content14"  style="display:none">
+        <h1>N</h1>
+        <img src="{% static 'morse_logs/img/N.jpg' %}" alt="N" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/N.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content15"  style="display:none">
+        <h1>O</h1>
+        <img src="{% static 'morse_logs/img/O.jpg' %}" alt="O" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/O.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content16"  style="display:none">
+        <h1>P</h1>
+        <img src="{% static 'morse_logs/img/P.jpg' %}" alt="P" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/P.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content17"  style="display:none">
+        <h1>Q</h1>
+        <img src="{% static 'morse_logs/img/Q.jpg' %}" alt="Q" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/Q.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content18"  style="display:none">
+        <h1>R</h1>
+        <img src="{% static 'morse_logs/img/R.jpg' %}" alt="R" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/R.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content19"  style="display:none">
+        <h1>S</h1>
+        <img src="{% static 'morse_logs/img/S.jpg' %}" alt="S" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/S.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content20"  style="display:none">
+        <h1>T</h1>
+        <img src="{% static 'morse_logs/img/T.jpg' %}" alt="T" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/T.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content21"  style="display:none">
+        <h1>U</h1>
+        <img src="{% static 'morse_logs/img/U.jpg' %}" alt="U" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/U.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content22"  style="display:none">
+        <h1>V</h1>
+        <img src="{% static 'morse_logs/img/V.jpg' %}" alt="V" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/V.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content23"  style="display:none">
+        <h1>W</h1>
+        <img src="{% static 'morse_logs/img/W.jpg' %}" alt="W" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/W.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content24"  style="display:none">
+        <h1>X</h1>
+        <img src="{% static 'morse_logs/img/X.jpg' %}" alt="X" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/X.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content25"  style="display:none">
+        <h1>Y</h1>
+        <img src="{% static 'morse_logs/img/Y.jpg' %}" alt="Y" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/Y.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+    <div class="content26"  style="display:none">
+        <h1>Z</h1>
+        <img src="{% static 'morse_logs/img/Z.jpg' %}" alt="Z" style="width:128px;height:128px;">
+        <audio controls>
+          <source src="{% static 'morse_logs/audio/Z.mp3' %}" type="audio/mp3">
+        </audio>
+    </div>
+
+</div>
+
+
+
+<script src="{% static 'morse_logs/js/jquery-3.4.1.min.js' %}"></script>
+<script src="{% static 'morse_logs/js/jquery-ui/jquery-ui.js' %}"></script>
+<script src="{% static 'morse_logs/js/app.js' %}"></script>
+{% endblock content %}
+

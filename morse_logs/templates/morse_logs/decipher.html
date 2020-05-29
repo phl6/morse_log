@@ -1,14 +1,22 @@
 {% extends "morse_logs/base.html" %}
 
 {% block content %}
-<title>Decipher</title>
-<div class="container">
-    <h1>Decipher</h1>
-        <form action="" method="get" >
-            <textarea rows="10" cols="50" name='a1' ></textarea>
-            <textarea rows="10" cols="50" name='a2' > {{result}} </textarea>
-            <button type="submit" name="decipher">Cipher</button>
-        </form>
+<title>Cipher</title>
+<div class="container jumbotron">
+    <br/>
+<p style="font-size: 65px"><strong>Decipher</strong></p>
+    <div class="form-group form-group-lg">
+    <form action="" method="get" >
+<!--        <input class="form-control input-lg" id="inputlg" type="text" name="a1">-->
+        <br/><br/>
+        <input class="form-control input-lg" name="a1" type="text" placeholder="Enter a morse code here ( . or - only )">
+        <br/><br/><br/>
+        <div class="well well-lg">
+            <output name="a2"  style="font-size: 30px;"><strong>{{result}}</strong></output>
+        </div>
+        <br/><br/><br/>
+        <button type="submit" name="decipher" class="btn-group-justified" style="font-size:18px"><strong>Decipher</strong></button>
+    </form>
+    </div>
 </div>
 {% endblock content  %}
-
